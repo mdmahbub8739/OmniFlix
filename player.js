@@ -146,8 +146,9 @@
   function defaultChain() {
     // Hindi audio/dub is the preferred default on every source that supports it.
     return [
-      { name: 'Lumen',    kind: 'peachify',  opts: { dub: 'Hindi' } },                                          // 1. PRIMARY
-      { name: 'Aurora',   kind: 'aurora',    opts: { lang: 'hi' } },                                            // 2.
+                                            // 1. PRIMARY
+      { name: 'Aurora',   kind: 'aurora',    opts: { lang: 'hi' } },  
+       { name: 'Lumen',    kind: 'peachify',  opts: { dub: 'Hindi' } },   // 2.
       { name: 'Nebula',   kind: 'nebula',    opts: {} },                                                        // 3.
       { name: 'Stellar',  kind: 'vidrock',   opts: {} },                                                        // 4. VidRock
       { name: 'Eclipse',  kind: 'peachify',  opts: { dub: 'Hindi' } },                                          // 5.
