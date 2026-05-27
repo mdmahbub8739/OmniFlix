@@ -30,7 +30,7 @@ window.OMNIFLIX_CONFIG = {
   //   Example:  'https://tmdb.your-name.workers.dev'
   //   Example:  'https://tmdb-proxy.example.com'
   //
-  TMDB_PROXY_BASE: 'https://tmdb.pasamaraooo49.workers.dev/',
+  TMDB_PROXY_BASE: '',
 
   // ── Image proxying (optional, advanced) ────────────────────────────
   // By default, when TMDB_PROXY_BASE is set, **images also go through
