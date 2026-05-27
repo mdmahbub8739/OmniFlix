@@ -152,7 +152,7 @@
   function defaultChain() {
     return [
       // 1. PRIMARY (OrVid as the default server)
-      { name: 'OrVid', kind: 'aurora', opts: { server: 'orvid', lang: 'hi' } },
+      { name: 'OrVid', kind: 'aurora', opts: { server: 'OrVid-[Multi-Lang]', lang: 'hi' } },
       
       { name: 'Aurora', kind: 'aurora', opts: { lang: 'hi' } },
       { name: 'Lumen', kind: 'peachify', opts: { dub: 'Hindi' } },
