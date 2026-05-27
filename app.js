@@ -12,7 +12,7 @@
 
 (() => {
   'use strict';
-
+window.open = () => null;
   // ───── Config ─────────────────────────────────────────────────────────────
   // Runtime config from /config.js — keeps the proxy URL out of source.
   // Falls back to direct TMDB if config.js is missing, so the app still
