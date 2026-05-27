@@ -35,7 +35,7 @@
   const O_VR = 'https://vidrock.ru';         // Stellar (VidRock)
   const TRUSTED_ORIGINS = [O_A, O_B, O_C, O_VR];
 
-  const NO_SOURCE_WATCHDOG_MS = 1400000;
+  const NO_SOURCE_WATCHDOG_MS = 994000000000000000000000000000;
   const PROGRESS_STORAGE_KEY  = 'peachifyProgress'; // kept for cross-source resume
 
   // ── helpers ────────────────────────────────────────────────────────────────
