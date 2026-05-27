@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>OmniFlix</title>
+<script>
+(function() {
+  // Stash the original path so the SPA can restore it on landing.
+  var path = location.pathname + location.search + location.hash;
+  try { sessionStorage.setItem('omniflix:redirect', path); } catch (_) {}
+  location.replace('/');
+})();
+</script></head><body></body></html>
