@@ -13,6 +13,15 @@
 (() => {
   'use strict';
 window.open = () => null;
+
+if ('navigation' in window) {
+  window.navigation.addEventListener('navigate', (e) => {
+    const dest = new URL(e.destination.url);
+    if (dest.origin !== location.origin) {
+      e.preventDefault(); // বাইরের কোনো URL এ navigate হতে দেবে না
+    }
+  });
+}
   // ───── Config ─────────────────────────────────────────────────────────────
   // Runtime config from /config.js — keeps the proxy URL out of source.
   // Falls back to direct TMDB if config.js is missing, so the app still
