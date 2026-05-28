@@ -3075,3 +3075,65 @@ html.pip-disabled #watchMinimize { display: none !important; }
   transition: opacity 380ms ease, background-image 0ms;
 }
 .vibe-card__bg:not([style*="background-image"]) { opacity: 0; }
+/* ──────────────────────────────────────────────────────────────────
+   MOBILE DENSITY PASS — reduces vertical scrolling across all pages.
+   Wrapped in @media so desktop layout stays unchanged.
+   ────────────────────────────────────────────────────────────────── */
+@media (max-width: 720px) {
+
+  /* ── Top nav: a touch shorter so content starts higher ── */
+  :root { --nav-h: 60px; }
+
+  /* ── HERO (home) ── was 86vh + 110px bottom padding ── */
+  .hero { height: 70vh; min-height: 420px; margin-bottom: 8px; }
+  .hero__content { padding-bottom: 90px; }
+  .hero__eyebrow  { margin-bottom: 14px; }
+  .hero__title    { margin-bottom: 10px; }
+  .hero__meta     { margin-bottom: 12px; gap: 10px; }
+  .hero__synopsis { margin-bottom: 18px; }
+
+  /* ── SECTIONS / RAILS (home + detail) ── 32px → 14px ── */
+  .section        { padding: 14px var(--page-pad); }
+  .section__head  { margin-bottom: 10px; gap: 12px; }
+  .section__title em, .section__sub { margin-top: 2px; }
+  .rail           { gap: 12px; padding: 4px 0 14px; }
+
+  /* ── BROWSE / LIST PAGES (Films, Series, Anime, People, My List) ── */
+  .page-header    { padding: 78px var(--page-pad) 18px; }
+  .page-header__eyebrow { margin-bottom: 10px; }
+  .filters        { padding: 10px var(--page-pad); }
+  .browse-grid    { gap: 16px 12px; }
+  .people-grid    { gap: 16px; padding: 18px 0 30px; }
+
+  /* ── DETAIL PAGE (movie / series / anime) ── */
+  .detail-hero            { padding: calc(var(--nav-h) + 24px) var(--page-pad) 24px; }
+  .detail-hero__content   { gap: 20px; }
+  .detail-hero__title     { margin-bottom: 10px; }
+  .detail-hero__meta      { margin-bottom: 14px; gap: 12px; }
+  .detail-hero__tagline   { margin-bottom: 14px; }
+  .genre-tags             { margin-bottom: 14px; }
+  .detail-hero__overview  { margin-bottom: 20px; }
+  .season-tabs            { margin-bottom: 14px; }
+
+  /* ── PERSON PAGE ── */
+  .person-hero            { padding: calc(var(--nav-h) + 24px) var(--page-pad) 24px; }
+  .person-hero__inner     { gap: 20px; }
+  .person-bio-wrap        { gap: 24px; padding: 0 var(--page-pad) 24px; }
+  .person-facts           { padding: 18px 20px; }
+
+  /* ── WATCH PAGE ── */
+  .watch__grid            { gap: 22px; margin-top: 16px; }
+  .watch__meta            { margin-bottom: 12px; }
+  .watch__overview        { margin-bottom: 20px; }
+
+  /* ── SEARCH OVERLAY ── */
+  .search__body           { padding: 18px var(--page-pad) 60px; }
+  .search__results .group { margin-bottom: 22px; }
+
+  /* ── EMPTY / FOOTER ── over-padded on phones ── */
+  .empty                  { padding: 50px 20px; }
+  .footer                 { margin-top: 40px; padding: 32px var(--page-pad); }
+
+  /* ── Bottom nav: tidier icon→label spacing ── */
+  .bottomnav a            { gap: 2px; }
+}
