@@ -152,16 +152,17 @@
   function defaultChain() {
     return [
       // 1. PRIMARY (OrVid as the default server)
-      { name: 'OrVid', kind: 'aurora', opts: { server: 'OrVid-[Multi-Lang]', lang: 'hi' } },
-      
-      { name: 'Aurora', kind: 'aurora', opts: { lang: 'hi' } },
+      { name: 'Orion-Hindi', kind: 'aurora', opts: { server: 'ZetPly-[Multi-Lang]', lang: 'hi' } },
+
+      { name: 'Aurora-Hindi', kind: 'aurora', opts: { lang: 'hi' } },
       { name: 'Lumen', kind: 'peachify', opts: { dub: 'Hindi' } },
       { name: 'Nebula', kind: 'nebula', opts: {} },
       { name: 'Stellar', kind: 'vidrock', opts: {} },
       { name: 'Eclipse', kind: 'peachify', opts: { dub: 'Hindi' } },
       { name: 'Solstice', kind: 'peachify', opts: { dub: 'Hindi' } },
       { name: 'Halo', kind: 'aurora', opts: { server: 'MbPly-[Multi-Lang]', lang: 'hi' } },
-      { name: 'Orion', kind: 'aurora', opts: { server: 'ZetPly-[Multi-Lang]', lang: 'hi' } },
+            { name: 'OrVid', kind: 'aurora', opts: { server: 'OrVid-[Multi-Lang]', lang: 'hi' } },
+      
       { name: 'Vega', kind: 'aurora', opts: { server: 'Xuhd-[Multi-Lang]', lang: 'hi' } }
     ];
   }
